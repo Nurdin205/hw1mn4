@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="lag-UX-BU3" customClass="CustomTableViewCell" customModule="HW1_m4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lag-UX-BU3" id="Xdt-Pt-guc">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wln-vK-NPo">
+                        <rect key="frame" x="16" y="15.999999999999998" width="247" height="23.333333333333329"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8P1-Yp-ebc">
+                        <rect key="frame" x="16" y="40.333333333333336" width="247" height="93.666666666666657"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-bY-yFR">
+                        <rect key="frame" x="279" y="17.000000000000007" width="98" height="116.66666666666669"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8P1-Yp-ebc" secondAttribute="trailing" constant="130" id="9S3-Rg-Bc0"/>
+                    <constraint firstItem="N4u-bY-yFR" firstAttribute="leading" secondItem="Wln-vK-NPo" secondAttribute="trailing" constant="16" id="C8E-fn-wcC"/>
+                    <constraint firstItem="Wln-vK-NPo" firstAttribute="top" secondItem="Xdt-Pt-guc" secondAttribute="top" constant="16" id="Nzz-Js-MFV"/>
+                    <constraint firstAttribute="trailing" secondItem="N4u-bY-yFR" secondAttribute="trailing" constant="16" id="Seb-PG-Lx9"/>
+                    <constraint firstItem="Wln-vK-NPo" firstAttribute="leading" secondItem="Xdt-Pt-guc" secondAttribute="leading" constant="16" id="WBq-RG-rkN"/>
+                    <constraint firstAttribute="bottom" secondItem="8P1-Yp-ebc" secondAttribute="bottom" constant="16" id="Wop-Og-EgA"/>
+                    <constraint firstItem="N4u-bY-yFR" firstAttribute="top" secondItem="Xdt-Pt-guc" secondAttribute="top" constant="16" id="jFl-Q0-gWx"/>
+                    <constraint firstItem="8P1-Yp-ebc" firstAttribute="top" secondItem="Wln-vK-NPo" secondAttribute="bottom" constant="1" id="jcZ-Uk-niL"/>
+                    <constraint firstAttribute="bottom" secondItem="N4u-bY-yFR" secondAttribute="bottom" constant="16" id="jsJ-Wr-hFD"/>
+                    <constraint firstItem="8P1-Yp-ebc" firstAttribute="leading" secondItem="Xdt-Pt-guc" secondAttribute="leading" constant="16" id="kf5-kz-yoS"/>
+                    <constraint firstAttribute="trailing" secondItem="Wln-vK-NPo" secondAttribute="trailing" constant="130" id="otG-xk-UfE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageName" destination="N4u-bY-yFR" id="PO0-g8-6sj"/>
+                <outlet property="label" destination="Wln-vK-NPo" id="59A-Wj-hfL"/>
+                <outlet property="textFild" destination="8P1-Yp-ebc" id="k9K-or-fOH"/>
+            </connections>
+            <point key="canvasLocation" x="26.717557251908396" y="66.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
